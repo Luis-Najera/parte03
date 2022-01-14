@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let Valor; // Crea una variable tipo entero
+        Valor = parseInt(prompt("Introduce la anchura del tablero "));
+       console.log("La medida del tablero es de "+ Valor +" x "+  Valor);
+
+
+       for (let j = 0; j < Valor; j++) {
+        let patron = ("")    
+        if (j%2 == 0 ) {
+    
+       for (let i = 0; i < Valor; i = i + 1) { 
+          if (i%2 == 0) {
+              patron = patron + "O";              
+          }else{
+              patron = patron + "X"; 
+          }          
+        }
+    }else {
+        for (let i = 0; i < Valor; i++) { 
+            if (i%2 == 0) {
+              patron = patron + "X";           
+             }else{
+              patron = patron + "O"; 
+          }   
+        }
+    }
+       console.log(patron);
+    }
+    </script>
+</body>
+</html>
